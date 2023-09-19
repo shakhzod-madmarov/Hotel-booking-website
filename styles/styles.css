@@ -1,0 +1,157 @@
+:root {
+  --primary-1: #f91155;
+  --primary-2: #ff4b77;
+  --primary-3: #d8003f;
+  --secondary: #3c3e43;
+  --accent: #ff7647;
+}
+
+body {
+  background-color: #deedff99;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rooms__section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__section {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.rooms__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  padding: 0;
+  gap: 25px;
+  width: 100%;
+  justify-items: center;
+}
+
+.room__item {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+.room__item:hover .best__price {
+  opacity: 1;
+}
+
+.room__img {
+  width: 100%;
+}
+
+.content__text {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(10, 34, 64, 0.1) 0%, #0a2240 100%);
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.best__price {
+  top: 0;
+  margin: 20px;
+  left: 0;
+  position: absolute;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.description__block {
+  border-bottom: solid 2px #ffffff67;
+  width: 90%;
+}
+
+.room__name {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.room__name:hover {
+  text-decoration: underline;
+}
+
+.room__name:active {
+  opacity: 0.3;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.price__block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.reserved {
+  display: none;
+  background-color: var(--secondary);
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 20px 100px;
+}
+
+.reserved__span {
+  color: var(--primary-2);
+}
+
+.price {
+  width: 35%;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.price__span {
+  color: var(--primary-2);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.btn__book {
+  width: 40%;
+  height: 50%;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-1);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn__book:hover {
+  background-color: var(--primary-3);
+}
+
+.best__price:active {
+  opacity: 0.3;
+}
